@@ -1,0 +1,32 @@
+# Learn more about configuring your app at https://shopify.dev/docs/apps/tools/cli/configuration
+
+client_id = "786a6120f1483d6960fc7d5c1505cb76"
+name = "testing"
+handle = "testing-1838"
+application_url = "https://collapse-publications-statistics-delivered.trycloudflare.com"
+embedded = true
+
+[build]
+include_config_on_deploy = true
+automatically_update_urls_on_dev = true
+
+[webhooks]
+api_version = "2025-04"
+
+  [[webhooks.subscriptions]]
+  topics = [ "app/uninstalled" ]
+  uri = "/webhooks/app/uninstalled"
+
+  [[webhooks.subscriptions]]
+  topics = [ "app/scopes_update" ]
+  uri = "/webhooks/app/scopes_update"
+
+[access_scopes]
+# Learn more at https://shopify.dev/docs/apps/tools/cli/configuration#access_scopes
+scopes = "write_products"
+
+[auth]
+redirect_urls = ["https://collapse-publications-statistics-delivered.trycloudflare.com/auth/callback", "https://collapse-publications-statistics-delivered.trycloudflare.com/auth/shopify/callback", "https://collapse-publications-statistics-delivered.trycloudflare.com/api/auth/callback"]
+
+[pos]
+embedded = false
