@@ -1,3 +1,23 @@
+# Project Description
+
+This project extends the Shopify App Template with a custom implementation that leverages the Shopify Admin API to fetch and display product data.
+
+## Key Features:
+
+1. Built on Shopify's Remix template for rapid app development
+2. Integrated with Shopify's GraphQL Admin API to fetch product information
+3. Implements a product listing interface that displays:
+  <br>--Product titles
+  <br>--Descriptions
+  <br>--Uses Shopify's Polaris design system for consistent UI/UX
+
+## Implementation Details:
+
+1. Created custom GraphQL queries to fetch product data
+2. Developed frontend components to display the product list
+3. Implemented proper authentication flows using Shopify's OAuth
+4. Set up efficient data fetching patterns using Remix's loader functions
+
 # Shopify App Template - Remix
 
 This is a template for building a [Shopify app](https://shopify.dev/docs/apps/getting-started) using the [Remix](https://remix.run) framework.
